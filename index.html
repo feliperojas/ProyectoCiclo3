@@ -7,30 +7,55 @@
     <title>Grupo-0</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./code/code.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <h2 class="title">RETO 2 - CICLO 3</h2>
     
     <table>
-        <th colspan="4" >Tabla creacion clientes</th>
-        <tr>
-            <td>Nombre</td>
-            <td>email</td>
-            <td>Edad</td>
-            <td></td>
+        <thead>
+            <th colspan="4" >Tabla Creacion Clientes</th>
+            <tr>
+                <th>Nombre</th>
+                <th>email</th>
+                <th>Edad</th>
+                <td></td>
 
-        </tr>
-        <tr>
-            <td><input type="text" id="fname" name="fname"></td>
-            <td><input type="text" id="femail" name="femail"></td>
-            <td><input type="text" id="fage" name="fage"></td>
-            <td><input type="button" id="createClient" value="Crear"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="fname" name="fname"></td>
+                <td><input type="email" id="femail" name="femail"></td>
+                <td><input type="number" id="fage" name="fage"></td>
+                <td><input type="button" id="createClient" value="Crear" onclick="crearCliente()"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br/><br/>
+
+    <table>
+        <thead>
+            <th colspan="4" >Clientes existentes en la BD</th>
+            <tr>
+                <th>Nombre</th>
+                <th>email</th>
+                <th>Edad</th>
+                <td><input type="button" id="leerBD" value="Leer BD" onclick="leerBD()"></td>
+
+            </tr>
+        </thead>
+        <tbody id="clientesBD">
+            
+        </tbody>
+
         </tr>
 
     </table>
 
 
-    
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>
