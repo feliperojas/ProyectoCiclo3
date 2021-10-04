@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>G16 Grupo 0 - Categoria</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/funcionesCategoria.js"></script>
+</head>
+<body>
+	<h2>Reto 2 del G16 Grupo 0 - Tabla Categor&iacute;a </h2>
+	<hr>
+	<h4>Registros Encontrados (Haga Click en Consultar)</h4>
+	<input type ="button" onclick="traerInformacion()" title="Consultar" value="Consultar">
+	<br>
+	<br>
+	<div id="contenedor"></div>
+	<hr>
+	<h4>Ingresar Nuevo Registro</h4>
+   <div>
+	   <input type="number" id="id" placeholder="id">
+	   <input type="text" id="name" placeholder="name">
+
+   </div>
+   <br>
+   <br>
+   <button onclick="nuevaInformacion()">Guardar Nuevo Registro</button>
+   <button onclick="actualizarInformacion()">Actualizar Registro</button>
+   <hr>
+   <a href="index.html">Volver al Men&uacute; Principal</a>
+
+</body>
+</html>
